@@ -36,9 +36,17 @@ public class Course {
                     .append(task.getMaxScore())
                     .append(",Средняя оценка - ")
                     .append(task.getAverageScore())
+                    .append(",Количество комментариев - ")
+                    .append(task.getCountComments())
                     .append("; ");
             list.add(string.toString());
         }
         return list;
     }
+
+    public ArrayList<Task> getTasks() {
+        return tasks;
+    }
+
+    public String getName() {return name; }
 }
