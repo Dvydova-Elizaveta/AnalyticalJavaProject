@@ -5,7 +5,7 @@ public class Task {
     private String tape;
     private int maxScore;
     private float averageScore;
-    private int countReviews;
+    private int countComments;
 
     public Task(String name, String tape, int maxScore) {
         this.name = name;
@@ -17,8 +17,8 @@ public class Task {
         this.averageScore = averageScore;
     }
 
-    public void addCountReviews(int countReviews) {
-        this.countReviews = countReviews;
+    public void addCountComments(int countComments) {
+        this.countComments = countComments;
     }
 
     public String getName() {
@@ -35,5 +35,9 @@ public class Task {
 
     public float getAverageScore() {
         return averageScore;
+    }
+
+    public int getCountComments() {
+        return countComments;
     }
 }
