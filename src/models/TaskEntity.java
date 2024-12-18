@@ -35,4 +35,24 @@ public class TaskEntity {
         this.score = score;
         this.countComments = countComments;
     }
+
+    public String getNameTask() {
+        return nameTask;
+    }
+
+    public String getCourse() {
+        return course;
+    }
+
+    public String getTape() {
+        return tape;
+    }
+
+    public float getScore() {
+        return score;
+    }
+
+    public int getCountComments() {
+        return countComments;
+    }
 }

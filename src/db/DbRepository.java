@@ -55,6 +55,13 @@ public class DbRepository {
                 .query();
     }
 
+    public List<TaskEntity> getTasksByCourse(String course) throws SQLException {
+        return taskDao.queryBuilder()
+                .where()
+                .eq(TaskEntity.COURSE_COLUMN, course)
+                .query();
+    }
+
     public List<TaskEntity> getTasksByCourseAndTape(String course, String tape) throws SQLException {
         return taskDao.queryBuilder()
                 .where()
